@@ -1,0 +1,25 @@
+projectName: notification-process-api-demo
+assetVersion: "1.0.0"
+apiVersion: "1.0"
+apiType: raml 
+isProxy: false
+deploymentType: cloudhub
+policies:
+- client-id-enforcement
+- rate-limiting
+slaTiers:
+- name: Basic
+  description: sample tier
+  autoApprove: true
+  limits:
+  - visible: true
+    count: 100
+    perTimeUnit: min
+alerts:
+- {name: RequestCounter, severity: Info, type: request-count, operator: gt, threshold: "10", period: "1", duration: "10", durationUnit: days, recipient: akhileshk}
+environment: Sandbox
+organizationName: Integration Services BU
+credentials:
+    userName: LakshmanNanduri
+    password: ********
+    
