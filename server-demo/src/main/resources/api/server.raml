@@ -1,0 +1,28 @@
+#%RAML 1.0
+title: server
+
+protocols:
+  - HTTP
+  - HTTPS
+
+baseUri: https://env-api/api/v1
+/data:
+  post:
+    body:
+      application/json:
+        example:
+          {
+            "name": "hemanth",
+            "number": 1233456789
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {"message": "succes"}
+      400:
+        body:
+          application/json:
+            example:
+              { "message": "bad request"}
