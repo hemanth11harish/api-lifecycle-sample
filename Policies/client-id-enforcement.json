@@ -1,0 +1,1 @@
+{"credentialsOriginHasHttpBasicAuthenticationHeader": "customExpression", "clientIdExpression":"#[attributes.headers['client_id']]", "clientSecretExpression":"#[attributes.headers['client_secret']]"}

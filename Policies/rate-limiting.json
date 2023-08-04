@@ -1,0 +1,11 @@
+{
+	"keySelector": "#[attributes.queryParams['identifier']]",
+	"rateLimits":[
+		{
+			"maximumRequests": 1000,
+			"timePeriodInMilliseconds": 720000
+		}
+	],
+	"clusterizable": true,
+	"exposeHeaders": true
+}
